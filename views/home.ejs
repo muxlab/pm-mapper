@@ -1,0 +1,18 @@
+<% if (!user) { %>
+	<p>Welcome! Please <a href="/login/twitter">log in</a>.</p>
+<% } else { %>
+	<p>Hello, <%= user.username %>. View your <a href="/profile">profile</a>.</p>
+<% } %>
+
+<div id="l-map1" class="l-map"></div>
+<div id="l-map2" class="l-map"></div>
+<div id="l-map3" class="l-map"></div>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css" />
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css" />
+
+<script src="//cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
+<script src="js/maptastic.min.js"></script>
+<script src="js/main.js"></script>

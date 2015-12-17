@@ -1,0 +1,32 @@
+html, body {
+  background: rgb(0,0,0);
+}
+
+
+.l-map {
+  height: 300px;
+  width: 300px;
+}
+#l-map1 {
+  position: relative;
+  left: 0;
+}
+#l-map2 {
+  position: relative;
+  left: 300px;
+}
+#l-map3 {
+  position: relative;
+  left: 600px;
+}
+.avatar {
+  position: relative;
+  bottom: 0;
+  height: 460px;
+}
+.avatar img {
+  display: block;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}

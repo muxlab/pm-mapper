@@ -1,0 +1,43 @@
+{
+  "name": "pm",
+  "version": "1.0.0",
+  "description": "Two interactive web apps to use a web map in projection mapping.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muxlab/projection-mapping.git"
+  },
+  "keywords": [
+    "leaflet",
+    "projection",
+    "mapping",
+    "utility",
+    "firebase"
+  ],
+  "author": "Yusuke Nunokawa <nuno0825@gmail.com> (https://ynunokawa.github.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/muxlab/projection-mapping/issues"
+  },
+  "homepage": "https://github.com/muxlab/projection-mapping#readme",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "bootstrap": "^3.3.6",
+    "connect-ensure-login": "^0.1.1",
+    "cookie-parser": "^1.4.0",
+    "ejs": "^2.3.4",
+    "express": "^4.13.3",
+    "express-session": "^1.12.1",
+    "firebase": "^2.3.2",
+    "font-awesome": "^4.5.0",
+    "jquery": "^2.1.4",
+    "leaflet": "^0.7.7",
+    "maptastic": "git+https://github.com/glowbox/maptasticjs.git",
+    "morgan": "^1.6.1",
+    "passport": "^0.3.2",
+    "passport-twitter": "^1.0.3"
+  }
+}
