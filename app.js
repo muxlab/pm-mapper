@@ -10,7 +10,7 @@ var Strategy = require('passport-twitter').Strategy;
 // user's behalf, along with the user's profile.  The function must invoke `cb`
 // with a user object, which will be set at `req.user` in route handlers after
 // authentication.
-passport.use(new Strategy({
+/*passport.use(new Strategy({
     consumerKey: process.env.CONSUMER_KEY,
     consumerSecret: process.env.CONSUMER_SECRET,
     callbackURL: 'http://127.0.0.1:3000/login/twitter/return'
@@ -22,7 +22,7 @@ passport.use(new Strategy({
     // allows for account linking and authentication with other identity
     // providers.
     return cb(null, profile);
-  }));
+  }));*/
 
 
 // Configure Passport authenticated session persistence.
@@ -34,13 +34,13 @@ passport.use(new Strategy({
 // from the database when deserializing.  However, due to the fact that this
 // example does not have a database, the complete Twitter profile is serialized
 // and deserialized.
-passport.serializeUser(function(user, cb) {
+/*passport.serializeUser(function(user, cb) {
   cb(null, user);
 });
 
 passport.deserializeUser(function(obj, cb) {
   cb(null, obj);
-});
+});*/
 
 
 // Create a new Express application.

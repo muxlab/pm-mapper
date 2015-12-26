@@ -2,7 +2,28 @@ html, body {
   background: rgb(0,0,0);
 }
 
+/* Side Container */
 
+/* Menu Icon */
+.hamburger .hamburger__icon,
+.hamburger .hamburger__icon:before,
+.hamburger .hamburger__icon:after {
+    background-color: rgba(100,100,100,0.5);
+}
+.hamburger.active .hamburger__icon:before,
+.hamburger.active .hamburger__icon:after {
+    background-color: rgba(200,200,200,0.8);
+}
+
+/* Rewrite Leaflet CSS */
+.leaflet-container {
+  background: #fff;
+}
+.leaflet-layer {
+  transition: opacity 0.1s;
+}
+
+/* Maps */
 .l-map {
   height: 300px;
   width: 300px;
@@ -19,14 +40,6 @@ html, body {
   position: relative;
   left: 600px;
 }
-.avatar {
-  position: relative;
-  bottom: 0;
-  height: 460px;
-}
-.avatar img {
-  display: block;
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
+.circles {
+  fill: #ff9c00;
 }

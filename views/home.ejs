@@ -1,18 +1,37 @@
-<% if (!user) { %>
+<!--<% if (!user) { %>
 	<p>Welcome! Please <a href="/login/twitter">log in</a>.</p>
 <% } else { %>
 	<p>Hello, <%= user.username %>. View your <a href="/profile">profile</a>.</p>
-<% } %>
+<% } %>-->
+
+<div class="menu">
+  <span class="menu-global menu-top"></span>
+  <span class="menu-global menu-middle"></span>
+  <span class="menu-global menu-bottom"></span>
+</div>
+
+<div class="fat-nav">
+    <div class="fat-nav__wrapper">
+        <ul>
+            <li><a id="add-osm" href="#">OpenStreetMap</a></li>
+            <li><a id="add-esri-satellite" href="#">Esri Satellite</a></li>
+            <li><a id="add-stamen-tonar" href="#">Stamen Tonar</a></li>
+            <li><a id="add-menu" href="#">Menu item</a></li>
+        </ul>
+    </div>
+</div>
 
 <div id="l-map1" class="l-map"></div>
 <div id="l-map2" class="l-map"></div>
 <div id="l-map3" class="l-map"></div>
 
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css" />
-<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/jquery.fatNav.min.css">
 <link rel="stylesheet" href="css/style.css" />
 
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="//cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
+<script src="js/jquery.fatNav.min.js"></script>
 <script src="js/maptastic.min.js"></script>
 <script src="js/main.js"></script>
