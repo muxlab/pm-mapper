@@ -1,19 +1,22 @@
 // Reference to my Firebase
 var myFirebaseRef = new Firebase('https://torrid-inferno-1243.firebaseio.com/');
 
+// Grobal
 var index = 4;
 var maps = [];
 
 console.log('%c⚛ Projection Mapping Tool: Hello geohacker! ⚛', 'font-family:monospace;font-size:16px;color:darkblue;');
 
-// Create Menu Icon
+// Create menu icon
 $.fatNav();
 
+// Menu event listner
 $('.fat-nav__wrapper').on('click', function(e) {
   console.log(e.target.text);
   createMapContainer(e.target.text);
 });
 
+// Create container before map
 function createMapContainer(type) {
   var mapCont = $('<div>', {
     id: 'l-map' + index,
@@ -26,6 +29,7 @@ function createMapContainer(type) {
   index += 1;
 }
 
+// Create map and add tile layer
 function createMap(index, type) {
   var center = [35.8, 139];
   var zoom = 4;
@@ -58,6 +62,7 @@ function createMap(index, type) {
   }
 }
 
+// Create GeoJSON layer and add into maps
 function createGeoJSONLayer(url) {
   var markerIcon = L.divIcon({
     className: 'svg-marker-icon',
@@ -91,7 +96,7 @@ function createGeoJSONLayer(url) {
   });
 }
 
-// Leaflet Map Init
+// Init
 function initMap() {
   var center = [35.8, 139];
   var zoom = 4;
@@ -122,6 +127,7 @@ function initMap() {
     id: 'stamen-toner'
   }).addTo(map3);
 
+  // Firebase event listners
   myFirebaseRef.child('map/center').on('value', function(snapshot) {
     center = snapshot.val();
     console.log(maps);
