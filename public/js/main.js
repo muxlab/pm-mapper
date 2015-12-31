@@ -1,5 +1,5 @@
 // Reference to my Firebase
-var myFirebaseRef = new Firebase('https://torrid-inferno-1243.firebaseio.com/');
+var myFirebaseRef = new Firebase('https://<YOUR-APP>.firebaseio.com/');
 
 // Grobal
 var index = 4;
